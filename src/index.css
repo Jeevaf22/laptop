@@ -100,6 +100,36 @@ input {
 input:focus {
   outline: 1px solid #676c70;
 }
+
+.links {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.links a {
+  text-decoration: none;
+  margin: 20px;
+  width: auto;
+  color: #000;
+  font-weight: 700;
+}
+
+.about {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.about p {
+  margin: 10px;
+  line-height: 1.6;
+}
+
 /* Media query */
 @media screen and (max-width: 1024px) {
   .container {
