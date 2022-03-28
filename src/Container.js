@@ -7,7 +7,7 @@ const Container = ({ list }) => {
         list.map((product) => (
           <div className="product-card" key={product.id}>
             <div className="product-image">
-              <img src={product.img} alt="product image" />
+              <img src={product.img} alt="laptop" />
             </div>
             <h3 className="title">{product.title}</h3>
             <p className="description">{product.description}</p>
