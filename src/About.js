@@ -1,7 +1,6 @@
 const About = () => {
   return (
     <div className="about">
-      <h1>About</h1>
       <h2>Introduction</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sed ipsam
