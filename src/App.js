@@ -3,6 +3,7 @@ import Product from "./Product";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./About";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <About />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
