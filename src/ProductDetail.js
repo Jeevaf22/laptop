@@ -26,10 +26,9 @@ const ProductDetail = () => {
         dolore necessitatibus, odio obcaecati animi quod adipisci debitis,
         ipsam, commodi accusantium! Omnis, architecto.
       </p>
-
-      <Link to="/" className="btn-back">
-        Back to home
-      </Link>
+      <div className="btn-back">
+        <Link to="/">Back to home</Link>
+      </div>
     </div>
   );
 };
