@@ -5,7 +5,7 @@ const ProductDetail = () => {
   return (
     <div className="productdetail">
       <h1>{title}</h1>
-      <h2> {description}</h2>
+      <p className="desc"> {description}</p>
       <h3>Pirce: {price}</h3>
       <br />
       <img src={img} alt="laptop" />

@@ -23,6 +23,12 @@ body {
   margin: 0.5rem auto;
 }
 
+.desc {
+  color: #6a6f73 !important;
+  margin: 10px 0;
+  font-size: calc(0.8rem + 1vw) !important;
+}
+
 .container {
   min-height: 100vh;
 }
