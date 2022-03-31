@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import Product from "./Product";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import About from "./About";
 import Footer from "./Footer";
 import NotFound from "./NotFound";
@@ -9,7 +9,7 @@ import ProductDetail from "./ProductDetail";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <Navbar />
         <Switch>
@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/about">
             <About />
           </Route>
-          <Route path="/productdetail/:id/:title/:description/:price/:img">
+          <Route path="/productdetail/:id/:title/:description/:price/">
             <ProductDetail />
           </Route>
           <Route path="*">
@@ -28,8 +28,10 @@ function App() {
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+// /productdetail/:id/:title/:description/:price/

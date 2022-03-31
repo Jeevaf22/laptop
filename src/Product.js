@@ -90,7 +90,7 @@ const Product = () => {
 
   return (
     <div className="container">
-      <h1>Buy Laptops Online at Low Prices</h1>
+      <h1>Buy Laptops Online at Low Pricess</h1>
       <Input title={title} filter={filter} text="Filter products" />
       <Container list={list} />
     </div>

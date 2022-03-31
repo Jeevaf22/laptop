@@ -8,7 +8,7 @@ const Container = ({ list }) => {
       {list && list.length > 0 ? (
         list.map((product) => (
           <Link
-            to={`/productdetail/${product.id}/${product.title}/${product.description}/${product.price}/${product.img}`}
+            to={`/productdetail/${product.id}/${product.title}/${product.description}/${product.price}/`}
             className="product-link"
             key={product.id}
           >

@@ -1,14 +1,12 @@
 import { useParams, Link } from "react-router-dom";
 const ProductDetail = () => {
-  const { title, description, price, img } = useParams();
-  //   console.log(id);
+  const { title, description, price } = useParams();
+
   return (
     <div className="productdetail">
       <h1 className="h1">{title}</h1>
       <p className="desc"> {description}</p>
       <h3>Pirce: {price}</h3>
-      <br />
-      <img src={img} alt="laptop" />
       <br />
       <h4 className="h1">Lorem, ipsum dolor.</h4>
       <p>
