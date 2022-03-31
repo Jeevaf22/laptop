@@ -4,7 +4,7 @@ const ProductDetail = () => {
   //   console.log(id);
   return (
     <div className="productdetail">
-      <h1>{title}</h1>
+      <p className="h1">{title}</p>
       <p className="desc"> {description}</p>
       <h3>Pirce: {price}</h3>
       <br />
