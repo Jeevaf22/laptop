@@ -7,8 +7,12 @@ const Container = ({ list }) => {
     <div className="card-container">
       {list && list.length > 0 ? (
         list.map((product) => (
-          <Link to="" className="product-link" key={product.id}>
-            <div className="product-card">
+          <Link
+            to={`/productdetail/${product.id}/${product.title}/${product.description}/${product.price}/${product.img}`}
+            className="product-link"
+            key={product.id}
+          >
+            <div className="product-card" key={product.id}>
               <div className="product-image">
                 <img src={product.img} alt="laptop" />
               </div>

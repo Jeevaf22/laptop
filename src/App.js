@@ -4,6 +4,8 @@ import Product from "./Product";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./About";
 import Footer from "./Footer";
+import NotFound from "./NotFound";
+import ProductDetail from "./ProductDetail";
 
 function App() {
   return (
@@ -16,6 +18,12 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/productdetail/:id/:title/:description/:price/:img">
+            <ProductDetail />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
         <Footer />

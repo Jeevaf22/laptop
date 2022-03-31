@@ -154,6 +154,44 @@ input:focus {
   text-decoration: none;
 }
 
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.not-found p {
+  margin: 10px auto;
+}
+
+.productdetail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 15px 5px 16px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin: 10px;
+  min-height: 100vh;
+}
+
+.productdetail h1 {
+  margin: unset;
+  font-size: 2rem;
+}
+
+.productdetail p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.productdetail p span {
+  color: #3d3c0a;
+}
+
 /* Media query */
 @media screen and (max-width: 1024px) {
   .container {
