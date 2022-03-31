@@ -23,6 +23,10 @@ body {
   margin: 0.5rem auto;
 }
 
+.container {
+  min-height: 100vh;
+}
+
 .description {
   color: #6a6f73;
   font-weight: 300;
@@ -191,6 +195,15 @@ input:focus {
 
 .productdetail p span {
   color: #3d3c0a;
+}
+
+.btn-back {
+  text-decoration: none;
+  border: 1px solid #676c70;
+  padding: 4px;
+  color: #000;
+  font-weight: 700;
+  margin: 15px 0;
 }
 
 /* Media query */

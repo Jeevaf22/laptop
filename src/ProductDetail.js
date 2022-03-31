@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 const ProductDetail = () => {
   const { title, description, price, img } = useParams();
   //   console.log(id);
@@ -26,6 +26,10 @@ const ProductDetail = () => {
         dolore necessitatibus, odio obcaecati animi quod adipisci debitis,
         ipsam, commodi accusantium! Omnis, architecto.
       </p>
+
+      <Link to="/" className="btn-back">
+        Back to home
+      </Link>
     </div>
   );
 };
