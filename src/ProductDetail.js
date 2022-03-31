@@ -10,7 +10,7 @@ const ProductDetail = () => {
       <br />
       <img src={img} alt="laptop" />
       <br />
-      <h1 className="h1">Lorem, ipsum dolor.</h1>
+      <h4 className="h1">Lorem, ipsum dolor.</h4>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iusto
         itaque quasi minima sed, neque cum soluta quos dolorum, id vero odit
@@ -19,7 +19,7 @@ const ProductDetail = () => {
         saepe optio sunt magni molestias ipsam laboriosam corrupti eos quos!
         Velit, incidunt earum! Ipsam ad nisi voluptas vitae nostrum neque?
       </p>
-      <h1 className="h1">Lorem, ipsum.</h1>
+      <h4 className="h1">Lorem, ipsum.</h4>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi labore
         reiciendis consequatur <span> aliquid</span> ut accusamus ipsum corporis
