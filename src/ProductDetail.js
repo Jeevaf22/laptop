@@ -14,17 +14,17 @@ const ProductDetail = () => {
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iusto
         itaque quasi minima sed, neque cum soluta quos dolorum, id vero odit
-        dolore dolores? Amet <span> animi vitae</span> suscipit qui dolore
-        impedit est, eveniet dolor, ad magni quas doloribus? Sequi molestiae
-        saepe optio sunt magni molestias ipsam laboriosam corrupti eos quos!
-        Velit, incidunt earum! Ipsam ad nisi voluptas vitae nostrum neque?
+        dolore dolores? Amet <span className="sp"> animi vitae</span> suscipit
+        qui dolore impedit est, eveniet dolor, ad magni quas doloribus? Sequi
+        molestiae saepe optio sunt magni molestias ipsam laboriosam corrupti eos
+        quos! Velit, incidunt earum! Ipsam ad nisi voluptas vitae nostrum neque?
       </p>
       <h4 className="h1">Lorem, ipsum.</h4>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi labore
-        reiciendis consequatur <span> aliquid</span> ut accusamus ipsum corporis
-        dolore necessitatibus, odio obcaecati animi quod adipisci debitis,
-        ipsam, commodi accusantium! Omnis, architecto.
+        reiciendis consequatur <span className="sp"> aliquid</span> ut accusamus
+        ipsum corporis dolore necessitatibus, odio obcaecati animi quod adipisci
+        debitis, ipsam, commodi accusantium! Omnis, architecto.
       </p>
       <div className="btn-back">
         <Link to="/">Back to home</Link>
