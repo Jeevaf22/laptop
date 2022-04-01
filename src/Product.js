@@ -75,6 +75,7 @@ const Product = () => {
   const [title, setName] = useState("");
   const [list, setList] = useState(productList);
 
+  // Search filter
   const filter = (e) => {
     const keyword = e.target.value;
     if (keyword !== "") {
@@ -90,7 +91,7 @@ const Product = () => {
 
   return (
     <div className="container">
-      <h1>Buy Laptops Online at Low Pricess</h1>
+      <h1>Buy Laptops Online at Low Prices</h1>
       <Input title={title} filter={filter} text="Filter products" />
       <Container list={list} />
     </div>

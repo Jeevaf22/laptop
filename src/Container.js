@@ -1,8 +1,14 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
-import { Link } from "react-router-dom";
-
 const Container = ({ list }) => {
+  let [result, setResult] = useState(list);
+  console.log(result);
+  setResult = (output) => {
+    let pictureImage = output.img;
+    console.log(pictureImage);
+  };
   return (
     <div className="card-container">
       {list && list.length > 0 ? (
@@ -11,8 +17,9 @@ const Container = ({ list }) => {
             to={`/productdetail/${product.id}/${product.title}/${product.description}/${product.price}/`}
             className="product-link"
             key={product.id}
+            onClick={() => setResult(product)}
           >
-            <div className="product-card" key={product.id}>
+            <div className="product-card">
               <div className="product-image">
                 <img src={product.img} alt="laptop" />
               </div>

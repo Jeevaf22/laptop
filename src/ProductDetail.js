@@ -4,9 +4,17 @@ const ProductDetail = () => {
 
   return (
     <div className="productdetail">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet atque
+        saepe adipisci tempora ipsam? Obcaecati quasi unde repudiandae, eius
+        delectus voluptatibus explicabo fugit commodi, enim alias blanditiis a
+        qui rerum?
+      </p>
+
       <h1 className="h1">{title}</h1>
       <p className="desc"> {description}</p>
       <h3>Pirce: {price}</h3>
+      {/* <img src={img} alt="laptop" /> */}
       <br />
       <h4 className="h1">Lorem, ipsum dolor.</h4>
       <p>
