@@ -5,6 +5,8 @@ const ProductDetail = () => {
   const { id } = useParams();
   const { data: product } = useFetch("http://localhost:8000/products/" + id);
 
+  console.log(product);
+
   return (
     <div className="productdetail">
       {product && (
