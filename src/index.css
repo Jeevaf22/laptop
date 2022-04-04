@@ -29,6 +29,15 @@ body {
   font-size: calc(0.8rem + 1vw) !important;
 }
 
+.product-picture {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.price {
+  margin: 10px 0;
+}
+
 .container {
   min-height: 100vh;
 }
@@ -179,7 +188,7 @@ input:focus {
 .productdetail {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   padding: 20px 15px 5px 16px;
   border: 1px solid #999;
@@ -190,8 +199,15 @@ input:focus {
 
 .h1 {
   margin: unset !important;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-align: left;
+}
+
+.err {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .productdetail p {
@@ -199,12 +215,15 @@ input:focus {
   line-height: 1.6;
 }
 
+.productdetail img {
+  width: 40%;
+}
+
 .sp {
   color: #b69760;
 }
 
 .btn-back {
-  width: 100%;
   margin: 15px 0;
 }
 
@@ -232,5 +251,9 @@ input:focus {
   }
   .links a {
     font-size: 18px;
+  }
+
+  .productdetail img {
+    width: 30% !important;
   }
 }
