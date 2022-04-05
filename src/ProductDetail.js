@@ -1,16 +1,16 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import useFetch from "./useFetch";
 
 const ProductDetail = () => {
   const { id } = useParams();
   const { data: product } = useFetch("http://localhost:8000/products/" + id);
-
+  const navigate = useNavigate();
   return (
     <div className="productdetail">
       {product && (
         <>
           <h1 className="h1">{product.title}</h1>
-          <p className="desc"> {product.description}</p>
+          <p className="desc">{product.description}</p>
           <h3 className="price">Pirce: {product.price}</h3>
           <div className="product-picture">
             <img src={product.img} alt="laptop" />
@@ -19,8 +19,8 @@ const ProductDetail = () => {
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
             iusto itaque quasi minima sed, neque cum soluta quos dolorum, id
-            vero odit dolore dolores? Amet{" "}
-            <span className="sp"> animi vitae</span> suscipit qui dolore impedit
+            vero odit dolore dolores? Amet
+            <span className="sp">animi vitae</span> suscipit qui dolore impedit
             est, eveniet dolor, ad magni quas doloribus? Sequi molestiae saepe
             optio sunt magni molestias ipsam laboriosam corrupti eos quos!
             Velit, incidunt earum! Ipsam ad nisi voluptas vitae nostrum neque?
@@ -34,8 +34,10 @@ const ProductDetail = () => {
             architecto.
           </p>
           {/* Back to home button */}
-          <div className="btn-back">
-            <Link to="/">Back to home</Link>
+          <div>
+            <button className="btn-back" onClick={() => navigate("/")}>
+              Back to home
+            </button>
           </div>
         </>
       )}

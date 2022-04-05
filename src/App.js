@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import Product from "./Product";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import About from "./About";
 import Footer from "./Footer";
@@ -13,20 +13,12 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Product />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route path="/products/:id">
-            <ProductDetail />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Product />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
         <Footer />
       </div>
     </Router>
