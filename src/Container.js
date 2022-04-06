@@ -14,8 +14,8 @@ const Container = ({ products }) => {
     if (keyword !== "") {
       const results = products.filter((user) => {
         return (
-          user.title.toLowerCase().startsWith(keyword.toLowerCase()) ||
-          user.title.toLowerCase().includes(keyword.toLowerCase())
+          user.title.toLowerCase().includes(keyword.toLowerCase()) ||
+          user.description.toLowerCase().includes(keyword.toLowerCase())
         );
       });
       setList(results);
