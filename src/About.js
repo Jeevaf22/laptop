@@ -51,7 +51,7 @@ const About = () => {
         corporis.
       </p>
       {/* Back to home button */}
-      <div>
+      <div style={{ margin: "10px" }}>
         <button className="btn-back" onClick={() => navigate("/")}>
           Back to home
         </button>

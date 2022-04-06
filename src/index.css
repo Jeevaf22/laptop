@@ -231,6 +231,7 @@ input:focus {
   cursor: pointer;
   border: 1px solid #676c70;
 }
+
 /* Media query */
 @media screen and (max-width: 1024px) {
   .container {
