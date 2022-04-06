@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 const useFetch = (url) => {
   // State
   const [data, setData] = useState();
+  const [pending, setPending] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -18,12 +19,14 @@ const useFetch = (url) => {
         }
         const data = await response.json();
         setData(data);
+        setPending(false);
         setError(null);
       } catch (err) {
         if (err.name === "AbortError") {
           console.log("fetch aborted");
         } else {
           setError(err.message);
+          setPending(false);
         }
       }
     }
@@ -33,7 +36,7 @@ const useFetch = (url) => {
     return () => abortCont.abort();
   }, [url]);
 
-  return { data, error };
+  return { data, error, pending };
 };
 
 export default useFetch;

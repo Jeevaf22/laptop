@@ -173,7 +173,8 @@ input:focus {
   text-decoration: none;
 }
 
-.not-found {
+.not-found,
+.pending {
   display: flex;
   justify-content: center;
   align-items: center;

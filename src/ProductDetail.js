@@ -3,7 +3,9 @@ import useFetch from "./useFetch";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const { data: product } = useFetch("https://fakestoreapi.com/products/" + id);
+  const { data: product, pending } = useFetch(
+    "https://fakestoreapi.com/products/" + id
+  );
   const navigate = useNavigate();
   return (
     <div className="productdetail">
@@ -41,6 +43,7 @@ const ProductDetail = () => {
           </div>
         </>
       )}
+      {pending && <div className="pending">Loading...</div>}
     </div>
   );
 };
