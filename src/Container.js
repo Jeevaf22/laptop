@@ -13,7 +13,10 @@ const Container = ({ products }) => {
     const keyword = e.target.value;
     if (keyword !== "") {
       const results = products.filter((user) => {
-        return user.title.toLowerCase().startsWith(keyword.toLowerCase());
+        return (
+          user.title.toLowerCase().startsWith(keyword.toLowerCase()) ||
+          user.title.toLowerCase().includes(keyword.toLowerCase())
+        );
       });
       setList(results);
     } else {
