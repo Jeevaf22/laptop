@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="about">
       <h2>Introduction</h2>
@@ -47,6 +50,12 @@ const About = () => {
         repellendus eaque distinctio, ea illo, quo illum, numquam quaerat
         corporis.
       </p>
+      {/* Back to home button */}
+      <div>
+        <button className="btn-back" onClick={() => navigate("/")}>
+          Back to home
+        </button>
+      </div>
     </div>
   );
 };

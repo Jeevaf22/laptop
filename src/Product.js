@@ -5,11 +5,10 @@ const Product = () => {
   const { data: products, error } = useFetch(
     "https://fakestoreapi.com/products"
   );
-
   return (
     <div className="container">
       {error && <div className="err">{error}</div>}
-      {!error && <h1>Buy Laptops Online at Low Prices</h1>}
+      {!error && <h1>Shop E-Commerce Prodcuts at Low Prices</h1>}
       {products && <Container products={products} />}
     </div>
   );
