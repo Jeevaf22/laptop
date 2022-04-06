@@ -19,8 +19,8 @@ const useFetch = (url) => {
         }
         const data = await response.json();
         setData(data);
-        setPending(false);
         setError(null);
+        setPending(false);
       } catch (err) {
         if (err.name === "AbortError") {
           console.log("fetch aborted");
