@@ -42,7 +42,7 @@ const Container = ({ products }) => {
                 <div className="product-image">
                   <img src={product.image} alt="laptop" />
                 </div>
-                <h3 className="title">{product.title}</h3>
+                <h3 className="title tit">{product.title}</h3>
                 <p className="description">{product.description}</p>
                 <div className="product-cart">
                   <span className="span">{product.price}</span>

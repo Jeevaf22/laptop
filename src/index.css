@@ -45,7 +45,25 @@ body {
 .description {
   color: #6a6f73;
   font-weight: 300;
-  margin: 10px auto;
+  /* Truncate */
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100px;
+}
+
+.tit {
+  /* Truncate */
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 50px;
 }
 
 .span {
