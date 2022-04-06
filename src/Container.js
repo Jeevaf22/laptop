@@ -37,7 +37,7 @@ const Container = ({ products }) => {
             >
               <div className="product-card">
                 <div className="product-image">
-                  <img src={product.img} alt="laptop" />
+                  <img src={product.image} alt="laptop" />
                 </div>
                 <h3 className="title">{product.title}</h3>
                 <p className="description">{product.description}</p>

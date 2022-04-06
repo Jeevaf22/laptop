@@ -40,6 +40,13 @@ const About = () => {
         quod quidem accusantium possimus rem eligendi consequatur. Ipsum
         necessitatibus doloribus praesentium repudiandae!
       </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, rem odit
+        nesciunt nemo quas a necessitatibus libero quo delectus ullam ea!
+        Perferendis debitis consectetur non nam omnis. Facilis neque consectetur
+        repellendus eaque distinctio, ea illo, quo illum, numquam quaerat
+        corporis.
+      </p>
     </div>
   );
 };

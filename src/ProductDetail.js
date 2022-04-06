@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const { data: product } = useFetch("http://localhost:8000/products/" + id);
+  const { data: product } = useFetch("https://fakestoreapi.com/products/" + id);
   const navigate = useNavigate();
   return (
     <div className="productdetail">
@@ -13,7 +13,7 @@ const ProductDetail = () => {
           <p className="desc">{product.description}</p>
           <h3 className="price">Pirce: {product.price}</h3>
           <div className="product-picture">
-            <img src={product.img} alt="laptop" />
+            <img src={product.image} alt="laptop" />
           </div>
           <h4 className="h1">Lorem, ipsum dolor.</h4>
           <p>

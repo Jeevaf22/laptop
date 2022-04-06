@@ -2,7 +2,9 @@ import useFetch from "./useFetch";
 import Container from "./Container";
 
 const Product = () => {
-  const { data: products, error } = useFetch("http://localhost:8000/products");
+  const { data: products, error } = useFetch(
+    "https://fakestoreapi.com/products"
+  );
 
   return (
     <div className="container">
