@@ -7,6 +7,7 @@ const Product = () => {
     error,
     pending,
   } = useFetch("https://fakestoreapi.com/products");
+
   return (
     <div className="container">
       {error && <div className="err">{error}</div>}
