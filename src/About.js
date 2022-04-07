@@ -30,7 +30,7 @@ const About = () => {
         quod quidem accusantium possimus rem eligendi consequatur. Ipsum
         necessitatibus doloribus praesentium repudiandae!
       </p>
-      <h2>Lorem ipsum dolor sit.</h2>
+      <h2>Lorem ipsum door sit.</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sed ipsam
         architecto facilis enim <span> consectetur magni</span> accusamus vel,
