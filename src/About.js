@@ -51,12 +51,6 @@ const About = () => {
           Back to home
         </button>
       </div>
-      {/* Another Button */}
-      <div style={{ margin: "10px" }}>
-        <button className="btn-back" onClick={() => navigate("/")}>
-          Back to home
-        </button>
-      </div>
     </div>
   );
 };
